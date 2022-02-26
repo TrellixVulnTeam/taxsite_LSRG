@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/taxsite/static/css/main.6457ca9a.css",
-    "main.js": "/taxsite/static/js/main.7760e6f0.js",
+    "main.js": "/taxsite/static/js/main.a76c75f8.js",
     "static/media/map.png": "/taxsite/static/media/map.5cd43eec5454609094ef.png",
     "static/media/computer-1185626_1280.jpg": "/taxsite/static/media/computer-1185626_1280.1b305245d17f21ef8f8e.jpg",
     "static/media/friendlyPic.jpg": "/taxsite/static/media/friendlyPic.64abb8522af985481d7a.jpg",
     "index.html": "/taxsite/index.html",
     "main.6457ca9a.css.map": "/taxsite/static/css/main.6457ca9a.css.map",
-    "main.7760e6f0.js.map": "/taxsite/static/js/main.7760e6f0.js.map"
+    "main.a76c75f8.js.map": "/taxsite/static/js/main.a76c75f8.js.map"
   },
   "entrypoints": [
     "static/css/main.6457ca9a.css",
-    "static/js/main.7760e6f0.js"
+    "static/js/main.a76c75f8.js"
   ]
 }
