@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0b39a22.css",
-    "main.js": "/static/js/main.867e4482.js",
-    "static/media/map.png": "/static/media/map.5cd43eec5454609094ef.png",
-    "static/media/computer-1185626_1280.jpg": "/static/media/computer-1185626_1280.1b305245d17f21ef8f8e.jpg",
-    "static/media/friendlyPic.jpg": "/static/media/friendlyPic.64abb8522af985481d7a.jpg",
-    "index.html": "/index.html",
-    "main.d0b39a22.css.map": "/static/css/main.d0b39a22.css.map",
-    "main.867e4482.js.map": "/static/js/main.867e4482.js.map"
+    "main.css": "/taxsite/static/css/main.0077c177.css",
+    "main.js": "/taxsite/static/js/main.72ce2f13.js",
+    "static/media/map.png": "/taxsite/static/media/map.5cd43eec5454609094ef.png",
+    "static/media/computer-1185626_1280.jpg": "/taxsite/static/media/computer-1185626_1280.1b305245d17f21ef8f8e.jpg",
+    "static/media/friendlyPic.jpg": "/taxsite/static/media/friendlyPic.64abb8522af985481d7a.jpg",
+    "index.html": "/taxsite/index.html",
+    "main.0077c177.css.map": "/taxsite/static/css/main.0077c177.css.map",
+    "main.72ce2f13.js.map": "/taxsite/static/js/main.72ce2f13.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0b39a22.css",
-    "static/js/main.867e4482.js"
+    "static/css/main.0077c177.css",
+    "static/js/main.72ce2f13.js"
   ]
 }
