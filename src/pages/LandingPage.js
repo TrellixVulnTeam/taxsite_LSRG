@@ -13,24 +13,29 @@ const LandingPage = ({
   menuIcon,
   setMenuIcon,
   menuToggle,
+  footerStyle,
 }) => {
   return (
-    <div className="landing-page grid gap-4">
-      <Header
-        menu={menu}
-        setMenu={setMenu}
-        menuIcon={menuIcon}
-        setMenuIcon={setMenuIcon}
-        menuToggle={menuToggle}
-      />
-      <div className="page-top grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mr-5 ml-5 md:mr-10 md:ml-10 lg:mr-20 lg:ml-20">
-        <RegisterAd />
-        <FriendlyAd />
-      </div>
-      <div className="gap-4 page-mid grid grid-cols-2 md:grid-cols-3 ml-5 mr-5 md:mr-10 md:ml-10 lg:mr-20 lg:ml-20">
-        <YelpComp yelpData={yelpData} />
-        <Map />
-      </div>
+    <div className="landing-page ">
+      <section style={footerStyle} className="landing-page-container ">
+        <Header
+          menu={menu}
+          setMenu={setMenu}
+          menuIcon={menuIcon}
+          setMenuIcon={setMenuIcon}
+          menuToggle={menuToggle}
+        />
+        <div className="landing-content-area grid gap-4 mt-4">
+          <div className="page-top grid grid-cols-2  md:grid-cols-3 lg:grid-cols-3 gap-4 mr-5 ml-5 md:mr-10 md:ml-10 lg:mr-20 lg:ml-20">
+            <RegisterAd />
+            <FriendlyAd />
+          </div>
+          <div className="gap-4 page-mid grid grid-cols-2 md:grid-cols-3 ml-5 mr-5 md:mr-10 md:ml-10 lg:mr-20 lg:ml-20">
+            <YelpComp yelpData={yelpData} />
+            <Map />
+          </div>
+        </div>
+      </section>
       <Footer />
     </div>
   );

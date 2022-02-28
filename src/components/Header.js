@@ -8,8 +8,12 @@ const Header = () => {
   const [menu, setMenu] = useState("hidden");
   const [menuIcon, setMenuIcon] = useState(faBars);
 
-  const menuToggle = (e) => {
-    menu === "hidden" ? setMenu("flex") : setMenu("hidden");
+  const menuToggleHangler = (e) => {
+    // toggleing menu
+    menu === "hidden"
+      ? setMenu("flex") && setMenu(faBars)
+      : setMenu("hidden") && setMenuIcon(faXmark);
+    // changing icon
     if (menu === "flex") {
       setMenuIcon(faBars);
     } else if (menu === "hidden") {
@@ -18,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="header-area bg-amber-600 text-slate-50 flex justify-between items-center pt-1 pb-1">
+    <nav className="header-area bg-amber-600 text-slate-50 flex justify-between items-center pt-2 pb-2 ">
       <h1 className="font-bold text-md ml-5 md:ml-10 lg:ml-20 md:text-xl lg:text-2xl ">
         Iman & Associates Ltd.
       </h1>
@@ -26,7 +30,7 @@ const Header = () => {
         icon={menuIcon}
         className="mr-5 menu-icon lg:hidden md:hidden"
         size="2x"
-        onClick={menuToggle}
+        onClick={menuToggleHangler}
       />
       {/* styling for resposive navbar */}
       <div
@@ -34,13 +38,13 @@ const Header = () => {
       >
         <ul className="text-lg md:text-sm lg:text-lg text-center mb-4 flex flex-col md:flex-row md:mb-0 md:gap-4 md:mr-8">
           <li className="mb-2 md:mb-0">
-            <Link to="/">Home</Link>
+            <Link to="/taxsite">Home</Link>
           </li>
           <li className="mb-2 md:mb-0">
-            <Link to="/about">About</Link>
+            <Link to="/taxsite/about">About</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/taxsite/contact">Contact</Link>
           </li>
         </ul>
         <button className="btn-primary bg-sky-600	hover:bg-sky-700 pr-4 pl-4 pt-2 pb-2 rounded text-xl md:text-lg lg:text-xl md:mr-10 lg:mr-20">

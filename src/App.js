@@ -7,9 +7,17 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import sideBarImg from "./images/sidebarimg.jpeg";
+
 // api import
 
 function App() {
+  const footerStyle = {
+    minHeight: "calc(100vh - 60px)",
+  };
+  const sideBarStyle = {
+    backgroundImage: "url(" + sideBarImg + ")",
+  };
   const yelpData = [
     {
       name: "Tiffinay M.",
@@ -70,9 +78,27 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<LandingPage yelpData={yelpData} />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/contact" element={<Contact />} />
+        <Route
+          exact
+          path="/taxsite"
+          element={
+            <LandingPage footerStyle={footerStyle} yelpData={yelpData} />
+          }
+        />
+        <Route
+          exact
+          path="/taxsite/about"
+          element={
+            <About sideBarStyle={sideBarStyle} footerStyle={footerStyle} />
+          }
+        />
+        <Route
+          exact
+          path="/taxsite/contact"
+          element={
+            <Contact sideBarStyle={sideBarStyle} footerStyle={footerStyle} />
+          }
+        />
       </Routes>
     </Router>
   );
